@@ -265,10 +265,10 @@ main:focus{outline:none}
 
 /* Mode aksesibilitas (kelas di <html>) */
 html{font-size:calc(100% * var(--a11y-scale,1))}
-html.a11y-grayscale body{filter:grayscale(1)}
-html.a11y-invert body{filter:invert(1) hue-rotate(180deg)}
-html.a11y-invert body img{filter:invert(1) hue-rotate(180deg)}
-html.a11y-grayscale.a11y-invert body{filter:grayscale(1) invert(1)}
+html.a11y-grayscale body > :not(#a11y){filter:grayscale(1)}
+html.a11y-invert body > :not(#a11y){filter:invert(1) hue-rotate(180deg)}
+html.a11y-invert body > :not(#a11y) img{filter:invert(1) hue-rotate(180deg)}
+html.a11y-grayscale.a11y-invert body > :not(#a11y){filter:grayscale(1) invert(1)}
 html.a11y-readable body,html.a11y-readable button,html.a11y-readable input,html.a11y-readable select,html.a11y-readable textarea,html.a11y-readable h1,html.a11y-readable h2,html.a11y-readable h3{font-family:"Atkinson Hyperlegible","Segoe UI",Arial,sans-serif!important}
 html.a11y-spacing body{letter-spacing:.12em;word-spacing:.2em}
 html.a11y-lineheight body{line-height:2}
