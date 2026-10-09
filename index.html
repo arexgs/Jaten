@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Kecamatan Jaten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== MULAI: TOP BAR (kontak singkat kecamatan) ===== -->
+  <div class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <span>Telp: [Nomor Telepon Kecamatan]</span>
+      <span>Email: [Email Kecamatan]</span>
+    </div>
+  </div>
+  <!-- ===== SELESAI: TOP BAR ===== -->
+
+  <!-- ===== MULAI: NAVBAR (tampil di semua halaman) ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#halaman-utama" data-view="halaman-utama"><img class="brand-logo" src="Lambang_Kabupaten_Karanganyar.png" alt="Lambang Kabupaten Karanganyar"><span class="brand-text"><span>Pemerintah Kabupaten Karanganyar</span><span>Kecamatan Jaten</span></span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link" href="#halaman-utama" data-view="halaman-utama">Beranda</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link" id="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-kelurahan">Daftar Kelurahan <span class="caret"></span></button>
+          <ul class="dropdown" id="dropdown-kelurahan">
+            <li><button data-view="kelurahan-1">Dagen</button></li>
+            <li><button data-view="kelurahan-2">Ngringo</button></li>
+            <li><button data-view="kelurahan-3">Sroyo</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- ===== SELESAI: NAVBAR ===== -->
+
+  <main>
+
+    <!-- ===== MULAI: HALAMAN UTAMA ===== -->
+    <section class="view active" id="halaman-utama" data-title="Portal Kecamatan Jaten, Kabupaten Karanganyar">
+
+      <!-- Hero -->
+      <div class="hero" id="utama-hero">
+        <div class="container">
+          <h1>Informasi Kelurahan di Kecamatan Jaten</h1>
+          <p>Portal informasi untuk warga Kelurahan Dagen, Ngringo, dan Sroyo, Kecamatan Jaten, Kabupaten Karanganyar. Pilih kelurahan melalui menu Daftar Kelurahan di bagian atas.</p>
+        </div>
+      </div>
+
+      <!-- Layanan (akses cepat) -->
+      <div class="section" id="utama-layanan">
+        <div class="container">
+          <div class="section-head"><h2>Layanan Kecamatan</h2><p>[Pengantar singkat layanan kecamatan]</p></div>
+          <div class="grid grid-4">
+            <!-- Salin blok .card untuk menambah layanan -->
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi singkat]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi singkat]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi singkat]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi singkat]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita kecamatan -->
+      <div class="section section-alt" id="utama-berita">
+        <div class="container">
+          <div class="section-head"><h2>Berita</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok article.card untuk menambah berita -->
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tentang portal & FAQ -->
+      <div class="section" id="utama-faq">
+        <div class="container grid grid-2">
+          <div id="utama-tentang">
+            <h2>Tentang Portal</h2>
+            <p>[Deskripsi portal: tujuan, pengelola, dan manfaat bagi warga]</p>
+          </div>
+          <div>
+            <h2>Pertanyaan Umum</h2>
+            <!-- Salin blok details untuk menambah pertanyaan -->
+            <details class="faq" open><summary>[Pertanyaan, mis. jam operasional kecamatan]</summary><p>[Jawaban]</p></details>
+            <details class="faq"><summary>[Pertanyaan]</summary><p>[Jawaban]</p></details>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontak & lokasi kecamatan -->
+      <div class="section section-alt" id="utama-kontak">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Kontak dan Lokasi</h2>
+            <ul class="contact-list">
+              <li><strong>Alamat:</strong> [Alamat Kantor Kecamatan Jaten]</li>
+              <li><strong>Telepon:</strong> [Nomor Telepon]</li>
+              <li><strong>Email:</strong> [Alamat Email]</li>
+              <li><strong>Jam layanan:</strong> [Hari dan Jam Operasional]</li>
+            </ul>
+          </div>
+          <div class="map-box"><!-- Tempel <iframe src="..."></iframe> Google Maps di sini --><div class="img-placeholder" style="height:100%">[Peta Lokasi]</div></div>
+        </div>
+      </div>
+
+      <footer class="footer" id="utama-footer">
+        <div class="container"><p><strong>Portal Kecamatan Jaten</strong></p><p>Kecamatan Jaten, Kabupaten Karanganyar</p><p>&copy; [Tahun] Portal Kecamatan Jaten.</p></div>
+      </footer>
+    </section>
+    <!-- ===== SELESAI: HALAMAN UTAMA ===== -->
+
+    <!-- ===== MULAI: HALAMAN KELURAHAN 1 (Dagen) ===== -->
+    <section class="view" id="kelurahan-1" data-title="Kelurahan Dagen - Kecamatan Jaten">
+
+      <!-- Hero / banner kelurahan -->
+      <div class="kel-hero" id="kel1-hero">
+        <div class="container">
+          <button class="btn btn-outline back-btn" data-view="halaman-utama">&larr; Kembali ke halaman utama</button>
+          <h1>Kelurahan Dagen</h1>
+          <p>[Slogan atau kalimat sambutan singkat]</p>
+        </div>
+      </div>
+
+      <!-- Profil & deskripsi -->
+      <div class="section" id="kel1-profil">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Profil Kelurahan</h2>
+            <p>[Deskripsi Kelurahan]</p>
+            <p>[Sejarah singkat, visi, dan misi kelurahan]</p>
+          </div>
+          <div class="gallery-item"><!-- Ganti dengan: <img src="gambar/kel1-profil.jpg" alt="..."> --><div class="img-placeholder">[Foto Kelurahan]</div></div>
+        </div>
+      </div>
+
+      <!-- Statistik -->
+      <div class="section section-alt" id="kel1-statistik">
+        <div class="container">
+          <div class="section-head"><h2>Kelurahan dalam Angka</h2></div>
+          <div class="grid grid-4">
+            <!-- Salin blok .card.stat untuk menambah data -->
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah Penduduk]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RW]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RT]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Luas Wilayah]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Struktur pemerintahan -->
+      <div class="section" id="kel1-struktur">
+        <div class="container">
+          <div class="section-head"><h2>Struktur Pemerintahan</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card.official untuk menambah pejabat -->
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Lurah]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Sekretaris]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan masyarakat -->
+      <div class="section section-alt" id="kel1-layanan">
+        <div class="container">
+          <div class="section-head"><h2>Layanan Masyarakat</h2><p>[Pengantar singkat layanan]</p></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah layanan -->
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita & pengumuman -->
+      <div class="section" id="kel1-berita">
+        <div class="container">
+          <div class="section-head"><h2>Berita dan Pengumuman</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah berita -->
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri kegiatan -->
+      <div class="section section-alt" id="kel1-galeri">
+        <div class="container">
+          <div class="section-head"><h2>Galeri Kegiatan</h2></div>
+          <div class="grid gallery">
+            <!-- Ganti .img-placeholder dengan <img src="..." alt="..."> -->
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontak & lokasi -->
+      <div class="section" id="kel1-kontak">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Kontak dan Lokasi</h2>
+            <ul class="contact-list">
+              <li><strong>Alamat:</strong> [Alamat Kantor]</li>
+              <li><strong>Telepon:</strong> [Nomor Telepon]</li>
+              <li><strong>Email:</strong> [Alamat Email]</li>
+              <li><strong>Jam layanan:</strong> [Hari dan Jam Operasional]</li>
+            </ul>
+          </div>
+          <div class="map-box"><!-- Tempel <iframe src="..."></iframe> Google Maps di sini --><div class="img-placeholder" style="height:100%">[Peta Lokasi]</div></div>
+        </div>
+      </div>
+
+      <!-- Footer kelurahan -->
+      <footer class="footer" id="kel1-footer">
+        <div class="container">
+          <p><strong>Kelurahan Dagen</strong></p>
+          <p>[Alamat Kantor]</p>
+          <p>&copy; [Tahun] Portal Kecamatan Jaten.</p>
+        </div>
+      </footer>
+    </section>
+    <!-- ===== SELESAI: HALAMAN KELURAHAN 1 (Dagen) ===== -->
+
+    <!-- ===== MULAI: HALAMAN KELURAHAN 2 (Ngringo) ===== -->
+    <section class="view" id="kelurahan-2" data-title="Kelurahan Ngringo - Kecamatan Jaten">
+
+      <!-- Hero / banner kelurahan -->
+      <div class="kel-hero" id="kel2-hero">
+        <div class="container">
+          <button class="btn btn-outline back-btn" data-view="halaman-utama">&larr; Kembali ke halaman utama</button>
+          <h1>Kelurahan Ngringo</h1>
+          <p>[Slogan atau kalimat sambutan singkat]</p>
+        </div>
+      </div>
+
+      <!-- Profil & deskripsi -->
+      <div class="section" id="kel2-profil">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Profil Kelurahan</h2>
+            <p>[Deskripsi Kelurahan]</p>
+            <p>[Sejarah singkat, visi, dan misi kelurahan]</p>
+          </div>
+          <div class="gallery-item"><!-- Ganti dengan: <img src="gambar/kel2-profil.jpg" alt="..."> --><div class="img-placeholder">[Foto Kelurahan]</div></div>
+        </div>
+      </div>
+
+      <!-- Statistik -->
+      <div class="section section-alt" id="kel2-statistik">
+        <div class="container">
+          <div class="section-head"><h2>Kelurahan dalam Angka</h2></div>
+          <div class="grid grid-4">
+            <!-- Salin blok .card.stat untuk menambah data -->
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah Penduduk]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RW]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RT]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Luas Wilayah]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Struktur pemerintahan -->
+      <div class="section" id="kel2-struktur">
+        <div class="container">
+          <div class="section-head"><h2>Struktur Pemerintahan</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card.official untuk menambah pejabat -->
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Lurah]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Sekretaris]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan masyarakat -->
+      <div class="section section-alt" id="kel2-layanan">
+        <div class="container">
+          <div class="section-head"><h2>Layanan Masyarakat</h2><p>[Pengantar singkat layanan]</p></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah layanan -->
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita & pengumuman -->
+      <div class="section" id="kel2-berita">
+        <div class="container">
+          <div class="section-head"><h2>Berita dan Pengumuman</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah berita -->
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri kegiatan -->
+      <div class="section section-alt" id="kel2-galeri">
+        <div class="container">
+          <div class="section-head"><h2>Galeri Kegiatan</h2></div>
+          <div class="grid gallery">
+            <!-- Ganti .img-placeholder dengan <img src="..." alt="..."> -->
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontak & lokasi -->
+      <div class="section" id="kel2-kontak">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Kontak dan Lokasi</h2>
+            <ul class="contact-list">
+              <li><strong>Alamat:</strong> [Alamat Kantor]</li>
+              <li><strong>Telepon:</strong> [Nomor Telepon]</li>
+              <li><strong>Email:</strong> [Alamat Email]</li>
+              <li><strong>Jam layanan:</strong> [Hari dan Jam Operasional]</li>
+            </ul>
+          </div>
+          <div class="map-box"><!-- Tempel <iframe src="..."></iframe> Google Maps di sini --><div class="img-placeholder" style="height:100%">[Peta Lokasi]</div></div>
+        </div>
+      </div>
+
+      <!-- Footer kelurahan -->
+      <footer class="footer" id="kel2-footer">
+        <div class="container">
+          <p><strong>Kelurahan Ngringo</strong></p>
+          <p>[Alamat Kantor]</p>
+          <p>&copy; [Tahun] Portal Kecamatan Jaten.</p>
+        </div>
+      </footer>
+    </section>
+    <!-- ===== SELESAI: HALAMAN KELURAHAN 2 (Ngringo) ===== -->
+
+    <!-- ===== MULAI: HALAMAN KELURAHAN 3 (Sroyo) ===== -->
+    <section class="view" id="kelurahan-3" data-title="Kelurahan Sroyo - Kecamatan Jaten">
+
+      <!-- Hero / banner kelurahan -->
+      <div class="kel-hero" id="kel3-hero">
+        <div class="container">
+          <button class="btn btn-outline back-btn" data-view="halaman-utama">&larr; Kembali ke halaman utama</button>
+          <h1>Kelurahan Sroyo</h1>
+          <p>[Slogan atau kalimat sambutan singkat]</p>
+        </div>
+      </div>
+
+      <!-- Profil & deskripsi -->
+      <div class="section" id="kel3-profil">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Profil Kelurahan</h2>
+            <p>[Deskripsi Kelurahan]</p>
+            <p>[Sejarah singkat, visi, dan misi kelurahan]</p>
+          </div>
+          <div class="gallery-item"><!-- Ganti dengan: <img src="gambar/kel3-profil.jpg" alt="..."> --><div class="img-placeholder">[Foto Kelurahan]</div></div>
+        </div>
+      </div>
+
+      <!-- Statistik -->
+      <div class="section section-alt" id="kel3-statistik">
+        <div class="container">
+          <div class="section-head"><h2>Kelurahan dalam Angka</h2></div>
+          <div class="grid grid-4">
+            <!-- Salin blok .card.stat untuk menambah data -->
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah Penduduk]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RW]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Jumlah RT]</div>
+            <div class="card stat"><strong>[Angka]</strong>[Luas Wilayah]</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Struktur pemerintahan -->
+      <div class="section" id="kel3-struktur">
+        <div class="container">
+          <div class="section-head"><h2>Struktur Pemerintahan</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card.official untuk menambah pejabat -->
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Lurah]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan, mis. Sekretaris]</p></div>
+            <div class="card official"><div class="avatar"><div class="img-placeholder" style="min-height:0">Foto</div></div><h3>[Nama Pejabat]</h3><p class="role">[Jabatan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan masyarakat -->
+      <div class="section section-alt" id="kel3-layanan">
+        <div class="container">
+          <div class="section-head"><h2>Layanan Masyarakat</h2><p>[Pengantar singkat layanan]</p></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah layanan -->
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+            <div class="card"><h3>[Nama Layanan]</h3><p>[Deskripsi layanan dan persyaratan]</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita & pengumuman -->
+      <div class="section" id="kel3-berita">
+        <div class="container">
+          <div class="section-head"><h2>Berita dan Pengumuman</h2></div>
+          <div class="grid grid-3">
+            <!-- Salin blok .card untuk menambah berita -->
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+            <article class="card"><p class="news-meta">[Tanggal] &middot; [Kategori]</p><h3>[Judul Berita]</h3><p>[Ringkasan berita]</p><a href="#">Baca selengkapnya</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri kegiatan -->
+      <div class="section section-alt" id="kel3-galeri">
+        <div class="container">
+          <div class="section-head"><h2>Galeri Kegiatan</h2></div>
+          <div class="grid gallery">
+            <!-- Ganti .img-placeholder dengan <img src="..." alt="..."> -->
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+            <div class="gallery-item"><div class="img-placeholder">[Foto Kegiatan]</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kontak & lokasi -->
+      <div class="section" id="kel3-kontak">
+        <div class="container grid grid-2">
+          <div>
+            <h2>Kontak dan Lokasi</h2>
+            <ul class="contact-list">
+              <li><strong>Alamat:</strong> [Alamat Kantor]</li>
+              <li><strong>Telepon:</strong> [Nomor Telepon]</li>
+              <li><strong>Email:</strong> [Alamat Email]</li>
+              <li><strong>Jam layanan:</strong> [Hari dan Jam Operasional]</li>
+            </ul>
+          </div>
+          <div class="map-box"><!-- Tempel <iframe src="..."></iframe> Google Maps di sini --><div class="img-placeholder" style="height:100%">[Peta Lokasi]</div></div>
+        </div>
+      </div>
+
+      <!-- Footer kelurahan -->
+      <footer class="footer" id="kel3-footer">
+        <div class="container">
+          <p><strong>Kelurahan Sroyo</strong></p>
+          <p>[Alamat Kantor]</p>
+          <p>&copy; 2026 Portal Kecamatan Jaten.</p>
+        </div>
+      </footer>
+    </section>
+    <!-- ===== SELESAI: HALAMAN KELURAHAN 3 (Sroyo) ===== -->
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
