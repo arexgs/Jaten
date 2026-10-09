@@ -260,8 +260,8 @@ main:focus{outline:none}
 .a11y-btn[aria-pressed=true]{background:#0b4f9c;color:#fff}
 .a11y-reset{width:100%;background:#fff}
 
-.a11y-guide{position:fixed;left:0;right:0;height:46px;background:rgba(255,235,59,.25);border-block:3px solid #ffb300;pointer-events:none;z-index:190}
-.a11y-guide[hidden]{display:none}
+#a11y-guide{position:fixed;left:0;right:0;height:46px;background:rgba(255,235,59,.25);border-block:3px solid #ffb300;pointer-events:none;z-index:190}
+#a11y-guide[hidden]{display:none}
 
 /* Mode aksesibilitas (kelas di <html>) */
 html{font-size:calc(100% * var(--a11y-scale,1))}
