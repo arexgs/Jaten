@@ -125,7 +125,8 @@ p{margin:0 0 1em;max-width:70ch}
 
 /* tambahan css supaya teksnya bisa lebih banyak dan tidak terpotong */
 
-#kel1-profil p {
+#kel1-profil p,
+#kel2-profil p {
   max-width: none;
   text-align: justify;
 }
