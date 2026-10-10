@@ -122,3 +122,10 @@ p{margin:0 0 1em;max-width:70ch}
   .section{padding:3rem 0} .hero{padding:4rem 0 5rem}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* tambahan css supaya teksnya bisa lebih banyak dan tidak terpotong */
+
+#kel1-profil p {
+  max-width: none;
+  text-align: justify;
+}
